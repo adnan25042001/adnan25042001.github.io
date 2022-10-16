@@ -166,3 +166,8 @@ section {
     width: 500px;
     height: auto;
 }
+header.sticky {
+    background: var(--bg-clr);
+    padding: 13px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
