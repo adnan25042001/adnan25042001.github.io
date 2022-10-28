@@ -8,11 +8,11 @@
     scroll-behavior: smooth;
 }
 :root {
-    --bg-clr: #ffffff;
+    --bg-clr: #f7f7f7;
     --txt-clr: #1d1d1d;
     --second-clr: #535353;
-    --shadow: linear-gradient(rgba(0, 0, 0, 0.5) 0%, #191919);
-    --nav-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    --shadow: linear-gradient(rgba(29, 29, 29, 0.75) 0%, #000000);
+    --nav-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     --bg-img: url(../img/background.jpg);
     --main-clr: #e2244d;
     --big-font: 4rem;
@@ -23,8 +23,8 @@
     --bg-clr: #03011a;
     --txt-clr: #ffffff;
     --second-clr: #c4c2cc;
-    --nav-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-    --shadow: linear-gradient(rgba(202, 202, 202, 0.1) 0%, #ffffff);
+    --nav-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    --shadow: linear-gradient(rgba(226, 226, 226, 0.75) 0%, #ffffff);
     --bg-img: none;
 }
 body {
@@ -222,7 +222,8 @@ header.sticky {
     box-shadow: var(--nav-shadow);
     border-radius: 12px;
     will-change: transform;
-    transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+    transform: perspective(1000px) rotateX(4.8deg) rotateY(10.23deg)
+        scale3d(1.05, 1.05, 1.05);
 }
 
 .about {
@@ -281,17 +282,25 @@ header.sticky {
     align-items: center;
     margin-top: 5rem;
     text-align: center;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .col {
     position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 350px;
+    /* border: 2px solid var(--main-clr); */
 }
 .col img {
     max-width: 100%;
     width: 550px;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
     border-radius: 12px;
+    transition: all 0.4s;
+}
+.col:hover img {
+    transform: scale(1.1);
 }
 .layer {
     background: transparent;
@@ -302,13 +311,14 @@ header.sticky {
     left: 0;
     border-radius: 12px;
     transition: all 0.4s;
+    overflow: hidden;
 }
 .layer:hover {
     background: var(--shadow);
 }
 .layer h3 {
     position: absolute;
-    width: 100%;
+    width: 90%;
     font-size: 25px;
     font-weight: 500;
     color: var(--bg-clr);
@@ -319,12 +329,12 @@ header.sticky {
     transition: all 0.4s;
 }
 .layer:hover h3 {
-    bottom: 52%;
+    bottom: 75%;
     opacity: 1;
 }
 .layer h5 {
     position: absolute;
-    width: 100%;
+    width: 90%;
     font-size: 17px;
     font-weight: 500;
     color: var(--bg-clr);
@@ -334,7 +344,52 @@ header.sticky {
     opacity: 0;
     transition: all 0.4s;
 }
-.layer:hover h5 {
-    bottom: 46%;
+.layer:hover h5:nth-child(2) {
+    bottom: 50%;
     opacity: 1;
+}
+.layer:hover h5:nth-child(3) {
+    bottom: 38%;
+    opacity: 1;
+}
+.layer:hover h5:nth-child(3) span {
+    font-weight: bold;
+    color: var(--main-clr);
+}
+.layer div {
+    position: absolute;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--bg-clr);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: all 0.4s;
+}
+.layer:hover div {
+    bottom: 15%;
+    opacity: 1;
+}
+.layer div a {
+    display: inline-block;
+    background: transparent;
+    padding: 4px 22px;
+    border-radius: 20px;
+    border: 2px solid var(--main-clr);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bg-clr);
+    transition: ease 0.5s;
+}
+.layer div a:hover {
+    transform: scale(1.1);
+    background-color: var(--main-clr);
+    border: 2px solid var(--main-clr);
+    color: var(--txt-clr);
 }
