@@ -277,25 +277,23 @@ header.sticky {
 }
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(310px, auto));
     grid-gap: 5rem;
     align-items: center;
     margin-top: 5rem;
     text-align: center;
-    /* cursor: pointer; */
 }
 .col {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    height: 350px;
-    /* border: 2px solid var(--main-clr); */
+    height: 300px;
 }
 .col img {
     max-width: 100%;
     width: 550px;
-    height: 350px;
-    object-fit: cover;
+    height: 300px;
+    object-fit: fill;
     border-radius: 12px;
     transition: all 0.4s;
 }
