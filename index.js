@@ -23,17 +23,17 @@ const sr = ScrollReveal ({
     reset: true
 })
 
-sr.reveal(".home-text",{
+sr.reveal(".home-text, .about-img",{
     delay: 350,
     origin: "left"
 });
 
-sr.reveal(".home-img",{
+sr.reveal(".home-img, .about-text",{
     delay: 350,
     origin: "right"
 });
 
-sr.reveal(".sub-services, .about, .portfolio, .service, .cta, .contact",{
+sr.reveal(".sub-services, .portfolio, .service, .cta, .contact",{
     delay: 200,
     origin: "bottom"
 });
@@ -41,5 +41,5 @@ sr.reveal(".sub-services, .about, .portfolio, .service, .cta, .contact",{
 
 
 
-
+// email js need to search about that   
 
