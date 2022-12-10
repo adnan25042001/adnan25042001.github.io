@@ -87,6 +87,7 @@ header.sticky {
 
 section {
     padding: 100px 10%;
+    transition: 0.3s;
 }
 .home {
     min-height: 100%;
@@ -162,12 +163,12 @@ section {
 }
 .items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     align-items: center;
     text-align: center;
 }
-.sub-box, .tech {
+.sub-box {
     padding: 45px;
     transition: ease 0.5s;
     cursor: pointer;
@@ -250,102 +251,34 @@ section {
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5rem;
-    align-items: center;
+    gap: 5rem;
     margin-top: 5rem;
     text-align: center;
 }
 .col {
-    position: relative;
-    overflow: hidden;
     border-radius: 12px;
-    height: 300px;
+    border: 2px solid var(--main-clr);
+    padding: 10px;
 }
 .col img {
-    max-width: 100%;
-    width: 580px;
-    height: 420px;
+    width: 100%;
+    height: 280px;
     object-fit: fill;
     border-radius: 12px;
-    transition: all 0.4s;
 }
-.col:hover img {
-    transform: scale(1.1);
+.layer{
+    padding: 10px;
 }
-.layer {
-    background: transparent;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 12px;
-    transition: all 0.4s;
-    overflow: hidden;
+.layer h3{
+    font-size: 18px;
 }
-.layer:hover {
-    background: var(--shadow);
+.layer p{
+    font-size: var(--p-font);
+    color: var(--second-clr);
 }
-.layer h3 {
-    position: absolute;
-    width: 90%;
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--bg-clr);
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    opacity: 0;
-    transition: all 0.4s;
-}
-.layer:hover h3 {
-    bottom: 75%;
-    opacity: 1;
-}
-.layer h5 {
-    position: absolute;
-    width: 90%;
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--bg-clr);
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
-    opacity: 0;
-    transition: all 0.4s;
-}
-.layer:hover h5:nth-child(2) {
-    bottom: 50%;
-    opacity: 1;
-}
-.layer:hover h5:nth-child(3) {
-    bottom: 38%;
-    opacity: 1;
-}
-.layer:hover h5:nth-child(3) span {
-    font-weight: bold;
-    color: var(--main-clr);
-}
-.layer div {
-    position: absolute;
-    width: 80%;
+.layer div{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    font-size: 17px;
-    font-weight: 500;
-    color: var(--bg-clr);
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%) scale(0);
-    opacity: 0;
-    transition: all 0.4s;
-}
-.layer:hover div {
-    transform: translate(-50%) scale(1);
-    bottom: 15%;
-    opacity: 1;
 }
 .layer div a {
     display: inline-block;
@@ -355,23 +288,27 @@ section {
     border: 2px solid var(--main-clr);
     font-size: 20px;
     font-weight: 500;
-    color: var(--bg-clr);
+    color: var(--txt-clr);
     transition: ease 0.5s;
 }
 .layer div a:hover {
     transform: scale(1.1);
     background-color: var(--main-clr);
     border: 2px solid var(--main-clr);
-    color: var(--txt-clr);
 }
 
 .skill-container {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 3rem;
     align-items: center;
     text-align: center;
+}
+.tech {
+    padding: 20px 20px;
+    transition: ease 0.5s;
+    cursor: pointer;
 }
 .tech img{
     width: 120px;
@@ -380,7 +317,7 @@ section {
 
 .cta-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     align-items: center;
     margin-top: 5rem;
@@ -420,22 +357,58 @@ section {
     letter-spacing: 1px;
 }
 
+.form{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+}
+input{
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: var(--p-font);
+    background: transparent;
+    color: var(--txt-clr);
+    border: 1px solid white;
+}
+input::placeholder{
+    font-size: var(--p-font);
+}
+#tbtn {
+    font-size: 20px;
+    font-weight: 500;
+    transition: ease 0.5s;
+    width: 200px;
+    margin: auto;
+}
+#tbtn:hover {
+    background-color: var(--main-clr);
+    border: 1px solid var(--main-clr);
+    color: var(--txt-clr);
+}
+
 @media (max-width: 1300px) {
     header {
-        padding: 16px 3%;
+        padding: 16px 5%;
         transform: 0.3s;
     }
     header.sticky {
-        padding: 10px 3%;
+        padding: 10px 5%;
         transform: 0.3s;
     }
     section {
-        padding: 70px 3%;
+        padding: 70px 5%;
         transition: 0.3s;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1025px) {
     #menu-icon {
         display: block;
     }
@@ -469,6 +442,80 @@ section {
     .navlist.active {
         top: 100%;
     }
+} 
+
+@media (max-width: 900px){
+    .portfolio-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .col img{
+        height: 100%;
+    }
+    .skill-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .tech img{
+        width: 80px;
+        height: 80px;
+    }
+    .items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cta-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 767px){
+    .home {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home-img{
+        display: flex;
+        justify-content: center;
+        width: 400px;
+        margin: auto;
+    }
+    .about{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-img{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 600px) {
+    .col {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .col img{
+        height: 100%;
+    }
+    .skill-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tech img{
+        width: 100px;
+        height: 100px;
+    }
+    .items {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cta-box {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
+@media (max-width:400px){
+    .skill-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .home-img img{
+        width: 250px;
+    }
+}
 
