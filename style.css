@@ -417,10 +417,12 @@ input::placeholder{
     }
     .navlist {
         position: absolute;
+        height: 85vh;
         top: -700px;
         left: 0;
         right: 0;
         flex-direction: column;
+        justify-content: space-between;
         background: var(--main-clr);
         text-align: right;
         transition: all 0.4s;
@@ -428,7 +430,7 @@ input::placeholder{
     .navlist a {
         display: block;
         padding: 1rem;
-        margin: 1rem;
+        margin: 0.8rem;
         border-right: 2px solid var(--bg-clr);
         color: var(--bg-clr);
     }
