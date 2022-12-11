@@ -9,4 +9,4 @@ function mainClr(){
     i++;
 }
 
-setInterval(mainClr, 10000);
+setInterval(mainClr, 5000);
