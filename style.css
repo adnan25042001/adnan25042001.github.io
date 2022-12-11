@@ -427,8 +427,8 @@ input::placeholder{
     }
     .navlist a {
         display: block;
-        padding: 1.2rem;
-        margin: 1.5rem;
+        padding: 1rem;
+        margin: 1rem;
         border-right: 2px solid var(--bg-clr);
         color: var(--bg-clr);
     }
