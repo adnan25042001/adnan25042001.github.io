@@ -386,9 +386,6 @@ input{
     color: var(--txt-clr);
     border: 1px solid white;
 }
-/* input:nth-child(3){
-    height: 200px;
-} */
 input::placeholder{
     font-size: var(--p-font);
 }
@@ -535,9 +532,15 @@ input::placeholder{
         --h2-font: 1.7rem;
         --p-font: 1rem;
     }
+    .home-img{
+        width: 320px;
+    }
     .tech img{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
+    }
+    .tech h3{
+        font-size: 16px;
     }
     .home-img img{
         width: 250px;
