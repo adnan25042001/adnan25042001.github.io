@@ -373,12 +373,6 @@ section {
 .git-container{
     margin-top: 50px;
 }
-.git-container a{
-    display: flex;
-    justify-content: center;
-    color: var(--txt-clr);
-    margin-top: 20px;
-}
 
 .form{
     width: 100%;
@@ -541,6 +535,9 @@ input::placeholder, textarea::placeholder{
     .cta-box {
         grid-template-columns: repeat(1, 1fr);
     }
+    /* .git-container a img{
+        width: 85%;
+    } */
 }
 
 @media (max-width:400px){
