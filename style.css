@@ -370,9 +370,9 @@ section {
     letter-spacing: 1px;
 }
 
-.git-container{
+/* .git-container{
     margin-top: 50px;
-}
+} */
 
 .form{
     width: 100%;
@@ -535,9 +535,6 @@ input::placeholder, textarea::placeholder{
     .cta-box {
         grid-template-columns: repeat(1, 1fr);
     }
-    /* .git-container a img{
-        width: 85%;
-    } */
 }
 
 @media (max-width:400px){
