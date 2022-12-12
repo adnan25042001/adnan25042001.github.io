@@ -198,7 +198,7 @@ section {
         scale3d(1.05, 1.05, 1.05);
 }
 
-.about {
+.about-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -208,6 +208,10 @@ section {
     max-width: 100%;
     width: 500px;
     height: auto;
+}
+.about-text{
+    display: grid;
+    gap: 10px;
 }
 .about-text h2 {
     font-size: var(--h2-font);
@@ -389,6 +393,9 @@ input{
 input::placeholder{
     font-size: var(--p-font);
 }
+/* #msg{
+    height: 100px;
+} */
 #tbtn {
     font-size: 20px;
     font-weight: 500;
@@ -486,7 +493,7 @@ input::placeholder{
         --h2-font: 2.1rem;
         --p-font: 1.1rem;
     }
-    .about{
+    .about-content{
         grid-template-columns: repeat(1, 1fr);
     }
     .about-img{
@@ -503,7 +510,7 @@ input::placeholder{
         justify-content: center;
         margin: auto;
     }
-    .home-img ing{
+    .home-img img{
         width: 75%;
     }
     .col {
@@ -530,7 +537,7 @@ input::placeholder{
 
 @media (max-width:400px){
     :root {
-        --big-font: 2.7rem;
+        --big-font: 2.4rem;
         --h2-font: 1.7rem;
         --p-font: 1rem;
     }
