@@ -370,6 +370,16 @@ section {
     letter-spacing: 1px;
 }
 
+.git-container{
+    margin-top: 50px;
+}
+.git-container a{
+    display: flex;
+    justify-content: center;
+    color: var(--txt-clr);
+    margin-top: 20px;
+}
+
 .form{
     width: 100%;
     margin-top: 50px;
