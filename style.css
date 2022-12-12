@@ -382,7 +382,7 @@ form{
     width: 500px;
     gap: 20px;
 }
-input{
+input, textarea{
     padding: 10px 20px;
     border-radius: 12px;
     font-size: var(--p-font);
@@ -390,12 +390,10 @@ input{
     color: var(--txt-clr);
     border: 1px solid white;
 }
-input::placeholder{
+input::placeholder, textarea::placeholder{
     font-size: var(--p-font);
 }
-/* #msg{
-    height: 100px;
-} */
+
 #tbtn {
     font-size: 20px;
     font-weight: 500;
