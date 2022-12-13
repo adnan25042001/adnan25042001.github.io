@@ -33,7 +33,7 @@ sr.reveal(".home-img, .about-text",{
     origin: "right"
 });
 
-sr.reveal(".sub-services, .portfolio, .service, .cta, .contact",{
+sr.reveal(".sub-services, .portfolio, .service, .cta, .skills, .contact",{
     delay: 200,
     origin: "bottom"
 });
