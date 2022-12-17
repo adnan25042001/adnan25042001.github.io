@@ -156,10 +156,16 @@ section {
 .btn:hover {
     transform: scale(1.1);
 }
+.home-img{
+    display: flex;
+    margin: auto;
+}
 .home-img img {
     max-width: 100%;
-    width: 500px;
+    width: 350px;
     height: auto;
+    border-radius: 100%;
+    border: 3px solid var(--main-clr);
 }
 .items {
     display: grid;
@@ -529,6 +535,9 @@ textarea::placeholder {
     .about-img {
         display: flex;
         justify-content: center;
+    }
+    .about-img img{
+        width: 90%;
     }
     .skill-container {
         grid-template-columns: repeat(2, 1fr);
