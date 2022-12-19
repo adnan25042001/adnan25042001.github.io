@@ -37,9 +37,3 @@ sr.reveal(".sub-services, .portfolio, .service, .cta, .skills, .github, .contact
     delay: 200,
     origin: "bottom"
 });
-
-
-
-
-// email js need to search about that   
-
