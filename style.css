@@ -233,7 +233,6 @@ section {
     font-weight: 500;
 }
 .about-text p {
-    /* max-width: 550px; */
     font-size: var(--p-font);
     color: var(--second-clr);
     line-height: 28px;
@@ -378,9 +377,16 @@ section {
     letter-spacing: 1px;
 }
 
-/* .git-container{
+.git{
+    display: flex;
+    flex-direction: column;
     margin-top: 50px;
-} */
+    gap: 30px;
+}
+.git img{
+    width: 40%;
+    margin: auto;
+}
 
 .form {
     width: 100%;
@@ -502,12 +508,20 @@ textarea::placeholder {
     .cta-box {
         grid-template-columns: repeat(2, 1fr);
     }
+    .git img{
+        width: 50%;
+        margin: auto;
+    }
 }
 @media (max-width: 767px) {
     :root {
         --big-font: 3.2rem;
         --h2-font: 2.1rem;
         --p-font: 1.1rem;
+    }
+    .git img{
+        width: 60%;
+        margin: auto;
     }
 }
 @media (max-width: 600px) {
@@ -566,6 +580,10 @@ textarea::placeholder {
     }
     .tech h3 {
         font-size: 16px;
+    }
+    .git img{
+        width: 100%;
+        margin: auto;
     }
     form {
         width: 320px;
