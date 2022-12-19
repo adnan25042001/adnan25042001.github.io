@@ -520,7 +520,7 @@ textarea::placeholder {
         margin: auto;
     }
     .home-img img {
-        width: 75%;
+        width: 55%;
     }
     .col {
         display: grid;
@@ -537,7 +537,7 @@ textarea::placeholder {
         justify-content: center;
     }
     .about-img img{
-        width: 90%;
+        width: 95%;
     }
     .skill-container {
         grid-template-columns: repeat(2, 1fr);
@@ -560,18 +560,12 @@ textarea::placeholder {
         --h2-font: 1.7rem;
         --p-font: 1rem;
     }
-    .home-img {
-        width: 320px;
-    }
     .tech img {
         width: 40px;
         height: 40px;
     }
     .tech h3 {
         font-size: 16px;
-    }
-    .home-img img {
-        width: 250px;
     }
     form {
         width: 320px;
