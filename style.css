@@ -35,6 +35,7 @@ header {
     background: transparent;
     padding: 30px 10%;
     transition: 0.3s;
+    box-shadow: var(--nav-shadow);
 }
 header.sticky {
     background: var(--bg-clr);
