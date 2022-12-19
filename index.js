@@ -33,7 +33,7 @@ sr.reveal(".home-img, .about-text",{
     origin: "right"
 });
 
-sr.reveal(".sub-services, .portfolio, .service, .cta, .skills, .calendar, #git1, #git2, .contact",{
+sr.reveal(".sub-services, .portfolio, .service, .cta, .skills, github, .contact",{
     delay: 200,
     origin: "bottom"
 });
