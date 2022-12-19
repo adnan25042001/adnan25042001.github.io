@@ -376,16 +376,22 @@ section {
     font-size: var(--p-font);
     letter-spacing: 1px;
 }
-
+.git-container{
+    margin-top: 50px;
+}
+.calendar{
+    cursor: pointer;
+}
 .git{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 30px;
     gap: 30px;
 }
 .git img{
     width: 40%;
     margin: auto;
+    cursor: pointer;
 }
 
 .form {

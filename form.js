@@ -1,23 +1,25 @@
-function sendEmail() {
+document.querySelector("form").addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    let name = document.querySelector("#name").value;
+    let email = document.querySelector("#email").value;
+    let message = document.querySelector("#message").value;
+
+    let eBody = `
+        <b>Name : </b>${name}
+        <br>
+        <b>Message : </b>${message}
+        <br`;
+
     Email.send({
-        Host: "smtp.gmail.com",
-        Username: "faltu0918@gmail.com",
-        Password: "password",
+        SecureToken: "bb6a23ab-ed6d-47e0-b835-11c64f39b65a",
         To: "faltu0918@gmail.com",
-        From: document.querySelector("mail"),
-        Subject: "This is the subject",
-        Body: "And this is the body",
+        From: "faltu0918@gmail.com",
+        Subject: "Mail from : " + email,
+        Body: eBody,
     }).then((message) => alert(message));
-}
 
-data();
-
-async function data(){
-    try {
-        let res = await fetch("https://localhost:8088/bookservice/books");
-        let data = await res.json();
-        console.log(data);
-    } catch (error) {
-        
-    }
-}
+    name = "";
+    email = "";
+    message = "";
+});

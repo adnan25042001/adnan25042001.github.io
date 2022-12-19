@@ -25,6 +25,7 @@
             rel="stylesheet"
             href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
         />
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <body>
         <!------------- Header ----------------->
@@ -358,9 +359,11 @@
                 <div class="calendar"></div>
                 <div class="git">
                     <img
+                        id="git1"
                         src="https://github-readme-stats.vercel.app/api?username=adnan25042001&show_icons=true&theme=transparent"
                     />
                     <img
+                        id="git2"
                         src="https://github-readme-stats.vercel.app/api/top-langs/?username=adnan25042001&theme=transparent"
                     />
                 </div>
@@ -374,18 +377,19 @@
                 <h2>Get in touch</h2>
             </div>
             <div class="form">
-                <form onsubmit="sendEmail(); reset(); return false">
+                <form>
                     <input
                         id="name"
                         type="text"
                         placeholder="Enter your name"
                     />
                     <input
-                        id="mail"
+                        id="email"
                         type="email"
                         placeholder="Enter your email"
                     />
                     <textarea
+                        id="message"
                         type="text"
                         placeholder="Enter your massage"
                         cols="30"
