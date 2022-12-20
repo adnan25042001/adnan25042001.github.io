@@ -440,7 +440,7 @@ textarea:focus {
 }
 #tbtn:hover {
     background-color: var(--main-clr);
-    border: 1px solid var(--main-clr);
+    border: 2px solid var(--main-clr);
     color: var(--txt-clr);
 }
 
