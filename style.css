@@ -19,7 +19,7 @@
     --h2-font: 2.5rem;
     --p-font: 1.1rem;
 }
-#mobile{
+#mobile {
     color: var(--main-clr);
 }
 body {
@@ -38,7 +38,6 @@ header {
     background: transparent;
     padding: 30px 10%;
     transition: 0.3s;
-    box-shadow: var(--nav-shadow);
 }
 header.sticky {
     background: var(--bg-clr);
@@ -160,7 +159,7 @@ section {
 .btn:hover {
     transform: scale(1.1);
 }
-.home-img{
+.home-img {
     display: flex;
     margin: auto;
 }
@@ -380,19 +379,19 @@ section {
     font-size: var(--p-font);
     letter-spacing: 1px;
 }
-.git-container{
+.git-container {
     margin-top: 50px;
 }
-.calendar{
+.calendar {
     cursor: pointer;
 }
-.git{
+.git {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
     gap: 30px;
 }
-.git img{
+.git img {
     width: 40%;
     margin: auto;
     cursor: pointer;
@@ -420,11 +419,16 @@ textarea {
     font-size: var(--p-font);
     background: transparent;
     color: var(--txt-clr);
-    border: 1px solid white;
+    border: 2px solid white;
+    outline: var(--main-clr);
 }
 input::placeholder,
 textarea::placeholder {
     font-size: var(--p-font);
+}
+input:focus,
+textarea:focus {
+    border: 2px solid var(--main-clr);
 }
 
 #tbtn {
@@ -521,7 +525,7 @@ textarea::placeholder {
     .cta-box {
         grid-template-columns: repeat(2, 1fr);
     }
-    .git img{
+    .git img {
         width: 50%;
         margin: auto;
     }
@@ -532,7 +536,7 @@ textarea::placeholder {
         --h2-font: 2.1rem;
         --p-font: 1.1rem;
     }
-    .git img{
+    .git img {
         width: 60%;
         margin: auto;
     }
@@ -563,7 +567,7 @@ textarea::placeholder {
         display: flex;
         justify-content: center;
     }
-    .about-img img{
+    .about-img img {
         width: 95%;
     }
     .skill-container {
@@ -594,7 +598,7 @@ textarea::placeholder {
     .tech h3 {
         font-size: 16px;
     }
-    .git img{
+    .git img {
         width: 100%;
         margin: auto;
     }
