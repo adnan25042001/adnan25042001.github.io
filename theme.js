@@ -7,11 +7,10 @@ document.documentElement.style.setProperty("--main-clr", arr[i]);
 i = i + 1;
 
 function mainClr(){
-    let i = +localStorage.getItem("i") || 0;
     if(i >= arr.length) i = 0;
+    localStorage.setItem("i",i);
     document.documentElement.style.setProperty("--main-clr", arr[i]);
     i = i + 1;
-    localStorage.setItem("i",i);
 }
 
 setInterval(mainClr, 5000);
