@@ -19,9 +19,6 @@
     --h2-font: 2.5rem;
     --p-font: 1.1rem;
 }
-#mobile {
-    color: var(--main-clr);
-}
 body {
     background-color: var(--bg-clr);
     color: var(--txt-clr);
@@ -127,7 +124,7 @@ section {
     line-height: 28px;
     margin-bottom: 20px;
 }
-.social a {
+.social a{
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -140,7 +137,7 @@ section {
     margin-right: 22px;
     margin-bottom: 30px;
 }
-.social a:hover {
+.social a:hover, #social a:hover {
     transform: scale(1.1);
     background: var(--main-clr);
     transition: 0.5s;
@@ -430,6 +427,52 @@ input:focus,
 textarea:focus {
     border: 2px solid var(--main-clr);
 }
+#left{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid var(--txt-clr);
+    padding: 20px;
+}
+#left:hover{
+    border: 2px solid var(--main-clr);
+}
+#mobile{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+    border: 2px solid var(--txt-clr);
+    border-radius: 12px;
+    padding: 7px;
+    transition: ease-out 0.5s;
+}
+#mobile:hover{
+    transform: scale(1.06);
+    border: 2px solid var(--main-clr);
+    color: var(--main-clr);
+    transition: 0.5s;
+}
+#social{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: auto;
+}
+#social a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--txt-clr);
+    font-size: 17px;
+    color: var(--bg-clr);
+}
 
 #tbtn {
     font-size: 20px;
@@ -583,6 +626,9 @@ textarea:focus {
     .cta-box {
         grid-template-columns: repeat(1, 1fr);
     }
+    form, #left{
+        width: 380px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -601,6 +647,9 @@ textarea:focus {
     .git img {
         width: 100%;
         margin: auto;
+    }
+    #left{
+        width: 320px;
     }
     form {
         width: 320px;
