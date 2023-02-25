@@ -124,7 +124,7 @@ section {
     line-height: 28px;
     margin-bottom: 20px;
 }
-.social a{
+.social a {
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -137,7 +137,8 @@ section {
     margin-right: 22px;
     margin-bottom: 30px;
 }
-.social a:hover, #social a:hover {
+.social a:hover,
+#social a:hover {
     transform: scale(1.1);
     background: var(--main-clr);
     transition: 0.5s;
@@ -427,7 +428,7 @@ input:focus,
 textarea:focus {
     border: 2px solid var(--main-clr);
 }
-#left{
+#left {
     display: flex;
     flex-direction: column;
     width: 500px;
@@ -437,10 +438,10 @@ textarea:focus {
     border: 2px solid var(--txt-clr);
     padding: 20px;
 }
-#left:hover{
+#left:hover {
     border: 2px solid var(--main-clr);
 }
-#mobile{
+#mobile {
     display: flex;
     justify-content: center;
     margin: auto;
@@ -450,13 +451,13 @@ textarea:focus {
     padding: 7px;
     transition: ease-out 0.5s;
 }
-#mobile:hover{
+#mobile:hover {
     transform: scale(1.06);
     border: 2px solid var(--main-clr);
     color: var(--main-clr);
     transition: 0.5s;
 }
-#social{
+#social {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -626,7 +627,8 @@ textarea:focus {
     .cta-box {
         grid-template-columns: repeat(1, 1fr);
     }
-    form, #left{
+    form,
+    #left {
         width: 380px;
     }
 }
@@ -648,7 +650,7 @@ textarea:focus {
         width: 100%;
         margin: auto;
     }
-    #left{
+    #left {
         width: 320px;
     }
     form {
