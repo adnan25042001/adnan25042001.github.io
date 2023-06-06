@@ -8,12 +8,11 @@
     scroll-behavior: smooth;
 }
 :root {
-    --bg-clr: #03011a;
-    --txt-clr: #ffffff;
-    --second-clr: #c4c2cc;
-    --nav-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
-    --shadow: linear-gradient(rgba(226, 226, 226, 0.75) 0%, #ffffff);
-    --bg-img: url(../img/background.jpg);
+    --bg-clr: #ffffff;
+    --txt-clr: #000000;
+    --second-clr: #282828;
+    --nav-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    --shadow: linear-gradient(rgba(23, 23, 23, 0.75) 0%, #ffffff);
     --main-clr: #e2244d;
     --big-font: 4rem;
     --h2-font: 2.5rem;
