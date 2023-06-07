@@ -10,9 +10,14 @@
 :root {
     --bg-clr: #ffffff;
     --txt-clr: #000000;
-    --second-clr: #282828;
+    --second-clr: #222222;
     --nav-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    --shadow: linear-gradient(rgba(23, 23, 23, 0.75) 0%, #ffffff);
+    --shadow: linear-gradient(rgba(226, 226, 226, 0.75) 0%, #ffffff);
+    /* --bg-clr: #010011;
+    --txt-clr: #ffffff;
+    --second-clr: #c4c2cc;
+    --nav-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+    --shadow: linear-gradient(rgba(226, 226, 226, 0.75) 0%, #ffffff); */
     --main-clr: #e2244d;
     --big-font: 4rem;
     --h2-font: 2.5rem;
@@ -57,7 +62,7 @@ header.sticky {
     font-size: var(--p-font);
     color: var(--txt-clr);
     font-weight: 500;
-    padding: 10px 27px;
+    padding: 10px 20px;
 }
 .navlist a::after {
     content: "";
@@ -79,10 +84,11 @@ header.sticky {
     cursor: pointer;
     display: none;
 }
-#theme-icon {
-    width: 30px;
+/* #theme-icon {
+    width: 26px;
+    margin-left: 20px;
     cursor: pointer;
-}
+} */
 
 section {
     padding: 100px 10%;
@@ -90,10 +96,14 @@ section {
 }
 .home {
     min-height: 100%;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: relative;
-    display: grid;
+    display: flex;
+    background: #f9f9f9 url(./img/mainbackground.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     grid-gap: 4rem;
@@ -163,9 +173,10 @@ section {
 .home-img img {
     max-width: 100%;
     width: 350px;
+    margin-top: 100px;
     height: auto;
-    border-radius: 100%;
-    border: 3px solid var(--main-clr);
+    border-radius: 50%;
+    /* border: 3px solid var(--main-clr); */
 }
 .items {
     display: grid;
@@ -198,7 +209,7 @@ section {
 }
 .sub-box:hover,
 .tech:hover {
-    background: var(--bg-clr);
+    background-color: rgba(100, 100, 100, 0.1);
     box-shadow: var(--nav-shadow);
     border-radius: 12px;
     will-change: transform;
@@ -368,14 +379,6 @@ section {
 .wrap p {
     font-size: var(--p-font);
 }
-.ends {
-    text-align: center;
-    padding: 40px;
-}
-.ends p {
-    font-size: var(--p-font);
-    letter-spacing: 1px;
-}
 .git-container {
     margin-top: 50px;
 }
@@ -394,6 +397,13 @@ section {
     cursor: pointer;
 }
 
+.contact {
+    background: #f9f9f9 url(./img/newsletter-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+}
 .form {
     width: 100%;
     margin-top: 50px;
@@ -416,8 +426,8 @@ textarea {
     font-size: var(--p-font);
     background: transparent;
     color: var(--txt-clr);
-    border: 2px solid white;
-    outline: var(--main-clr);
+    border: 2px solid var(--txt-clr);
+    outline: var(--bg-clr);
 }
 input::placeholder,
 textarea::placeholder {
@@ -487,6 +497,15 @@ textarea:focus {
     color: var(--txt-clr);
 }
 
+.ends {
+    text-align: center;
+    padding: 70px 40px 30px 40px;
+}
+.ends p {
+    font-size: var(--p-font);
+    letter-spacing: 1px;
+}
+
 @media (max-width: 1300px) {
     header {
         padding: 16px 5%;
@@ -505,9 +524,6 @@ textarea:focus {
 @media (max-width: 1025px) {
     #menu-icon {
         display: block;
-    }
-    .home {
-        min-height: 80vh;
     }
     .navlist {
         height: 50px;
@@ -587,7 +603,8 @@ textarea:focus {
 }
 @media (max-width: 600px) {
     .home {
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+        height: 100%;
     }
     .home-img {
         display: flex;
