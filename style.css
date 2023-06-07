@@ -606,12 +606,12 @@ textarea:focus {
         height: 100%;
     }
     .home-img {
-        margin-top: 0;
         display: flex;
         justify-content: center;
         margin: auto;
     }
     .home-img img {
+        margin-top: 10px;
         width: 55%;
     }
     .col {
