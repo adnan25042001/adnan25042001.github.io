@@ -531,7 +531,7 @@ textarea:focus {
     }
     .navlist {
         position: absolute;
-        height: calc(100vh - 67px);
+        height: calc(100vh - 80px);
         top: -100vh;
         left: 0;
         right: 0;
@@ -540,7 +540,6 @@ textarea:focus {
         background: var(--main-clr);
         text-align: right;
         transition: all 0.4s;
-        overflow: auto;
     }
     .navlist a {
         display: block;
