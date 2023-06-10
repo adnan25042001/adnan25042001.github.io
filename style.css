@@ -600,7 +600,7 @@ textarea:focus {
         margin: auto;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 676px) {
     .home {
         flex-direction: column-reverse;
         height: 100%;
