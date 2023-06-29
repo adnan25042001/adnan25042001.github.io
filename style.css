@@ -526,15 +526,12 @@ textarea:focus {
         display: block;
     }
     .navlist {
-        height: 50px;
-        overflow: auto;
-    }
-    .navlist {
         position: absolute;
-        height: calc(100vh - 80px);
+        height: 90vh;
         top: -100vh;
         left: 0;
         right: 0;
+        overflow: auto;
         flex-direction: column;
         justify-content: space-between;
         background: var(--main-clr);
