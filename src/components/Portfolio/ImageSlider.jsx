@@ -31,7 +31,7 @@ const ImageSlider = ({ imgList }) => {
                 currentIndex === imgList.length - 1 ? 0 : currentIndex + 1;
 
             setCurrentIndex(newIndex);
-        }, 10000);
+        }, 5000);
     });
 
     return (

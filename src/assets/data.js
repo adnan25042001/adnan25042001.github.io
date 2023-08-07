@@ -13,6 +13,10 @@ import wm2 from "../assets/images/portfolio/wonder-mania/wm-2.png";
 import wm3 from "../assets/images/portfolio/wonder-mania/wm-3.png";
 import wm4 from "../assets/images/portfolio/wonder-mania/wm-4.png";
 
+import pf1 from "../assets/images/portfolio/myPortfolio/pf-1.png";
+import pf2 from "../assets/images/portfolio/myPortfolio/pf-2.png";
+import pf3 from "../assets/images/portfolio/myPortfolio/pf-3.png";
+
 import html from "./images/skills/html.svg";
 import css from "./images/skills/css.svg";
 import js from "./images/skills/js.svg";
@@ -62,6 +66,15 @@ export const portfolioList = [
         tech: "React, Tailwind CSS, NodeJs",
         live: "https://wonder-mania.onrender.com/",
         code: "https://github.com/adnan25042001/wonder-mania",
+    },
+    {
+        id: 4,
+        imgList: [pf1, pf2, pf3],
+        name: "Portfolio",
+        desc: "A captivating digital showcase highlighting achievements, skills, and creativity, inviting exploration and connection.",
+        tech: "HTML, CSS, JavaScript",
+        live: "https://adnan-portfolio.onrender.com/",
+        code: "https://github.com/adnan25042001/portfolio",
     },
 ];
 
