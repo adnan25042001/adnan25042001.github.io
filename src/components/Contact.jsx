@@ -17,8 +17,22 @@ const Contact = () => {
 
         console.log(name, email, message);
 
-        if (email.trim() === "") {
+        if (name.trim() == "" || name.length < 3) {
+            alert("Please enter your name");
+            return;
+        }
+
+        if (
+            email.trim() === "" ||
+            email.length <= 11 ||
+            email.slice(email.length - 10, email.length) !== "@gmail.com"
+        ) {
             alert("Please enter your email");
+            return;
+        }
+
+        if (message.trim() === "") {
+            alert("Please write your message");
             return;
         }
 
@@ -59,7 +73,7 @@ const Contact = () => {
                                 New Delhi, India
                             </p>
                         </div>
-                        <div className="social gap-6">
+                        <div className="social gap-4">
                             <a
                                 href="https://www.linkedin.com/in/adnanhussain0425/"
                                 target="_blank"

@@ -5,16 +5,15 @@ import GitHubCalendar from "react-github-calendar";
 const GithubCalender = () => {
     return (
         <section id="github">
-            <div className="heading">
+            <div className="heading mb-14">
                 <h3 className="text-mainColor">Github</h3>
                 <h2>Calander & Stats</h2>
             </div>
-            <div className="m-auto flex flex-col items-center justify-center gap-10">
+            <div className="container m-auto flex flex-col items-center justify-center gap-10">
                 <motion.div
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3 }}
-                    className="hidden xs:block"
                 >
                     <GitHubCalendar username="adnan25042001" />
                 </motion.div>
