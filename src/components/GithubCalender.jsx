@@ -14,6 +14,7 @@ const GithubCalender = () => {
                     initial={{ opacity: 0, scale: 0 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.3 }}
+                    className="hidden xs:block"
                 >
                     <GitHubCalendar username="adnan25042001" />
                 </motion.div>
