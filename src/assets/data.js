@@ -42,6 +42,7 @@ export const menuItem = ["Home", "About", "Portfolio", "Skills", "Contact"];
 export const portfolioList = [
     {
         id: 1,
+        cls: "s",
         imgList: [s1, s2, s3],
         name: "SKILLEX",
         desc: "Skillex is a cutting-edge e-learning platform! Embark on a journey of knowledge and skill enhancement from the comfort of your own space.",
@@ -51,6 +52,7 @@ export const portfolioList = [
     },
     {
         id: 2,
+        cls: "bs",
         imgList: [bs1, bs2, bs3, bs4, bs5],
         name: "BIGSTORE.",
         desc: "BIGSTORE is a e-commerse website that is expertly curated by the best luxury fashion brands and boutiques.",
@@ -60,6 +62,7 @@ export const portfolioList = [
     },
     {
         id: 3,
+        cls: "wm",
         imgList: [wm1, wm2, wm3, wm4],
         name: "Wonder-Mania",
         desc: "Discover your dream destinations with ease. Our tour and travel website offers seamless planning, expert guides, and unforgettable experiences.",
@@ -69,6 +72,7 @@ export const portfolioList = [
     },
     {
         id: 4,
+        cls: "pf",
         imgList: [pf1, pf2, pf3],
         name: "Portfolio",
         desc: "A captivating digital showcase highlighting achievements, skills, and creativity, inviting exploration and connection.",

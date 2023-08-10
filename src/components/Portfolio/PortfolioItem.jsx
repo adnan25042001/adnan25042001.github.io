@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import ImageSlider from "./ImageSlider";
 
-const PortfolioItem = ({ imgList, name, desc, tech, live, code }) => {
+const PortfolioItem = ({ imgList, name, desc, tech, live, code, cls }) => {
     return (
         <motion.div
             initial={{ y: 150, opacity: 0 }}
@@ -10,7 +10,7 @@ const PortfolioItem = ({ imgList, name, desc, tech, live, code }) => {
             transition={{ duration: 0.5 }}
             className="rounded-lg shadow-md hover:shadow-xl bg-white text-black overflow-hidden"
         >
-            <ImageSlider imgList={imgList} />
+            <ImageSlider imgList={imgList} cls={cls} />
             <div className="p-6 flex flex-col justify-between">
                 <div>
                     <h2 className="text-xl xs:text-2xl font-bold text-mainColor mb-3">

@@ -30,8 +30,6 @@ const App = () => {
                 setScrolled(false);
             }
 
-            // console.log(about, home, portfolio, skills);
-
             if (scroll <= home) {
                 const homeLink = document.getElementById("Home");
                 click(homeLink);
