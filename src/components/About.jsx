@@ -29,13 +29,14 @@ const About = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl mb-3">
                         I am a Full Stack Developer
                     </h2>
-                    <p className="text-base xs:text-lg text-secondryColor">
+                    <p className="text-base xs:text-lg text-secondryColor mb-2">
                         A seasoned Full Stack Developer with an unquenchable
                         passion for crafting digital wonders. My dedication to
                         my craft is unwavering, and I bring a wealth of skills
                         and knowledge to the table, primed to transform your
                         project into a resounding success.
-                        <br /> <br />
+                    </p>
+                    <p className="text-base xs:text-lg text-secondryColor mb-2">
                         My journey as a developer has equipped me with a diverse
                         skill set, allowing me to seamlessly navigate every
                         layer of development. From envisioning the big picture
@@ -43,7 +44,8 @@ const About = () => {
                         turning ideas into reality. One of my artistic outlets
                         includes sketching, which not only fuels my creativity
                         but also infuses an artistic perspective into my coding.
-                        <br /> <br />
+                    </p>
+                    <p className="text-base xs:text-lg text-secondryColor mb-2">
                         I am perpetually curious, and the ever-evolving
                         landscape of technology is my playground. Exploring new
                         horizons and embracing emerging technologies is my
@@ -53,7 +55,8 @@ const About = () => {
                         Deep Learning and Natural Language Processing, where I
                         strive to unravel the complexities and possibilities
                         that lie within.
-                        <br /> <br />
+                    </p>
+                    <p className="text-base xs:text-lg text-secondryColor mb-2">
                         So, if you're seeking a Full Stack Developer who lives
                         and breathes innovation, a mind that thrives on
                         challenges, and a professional who blends creativity
