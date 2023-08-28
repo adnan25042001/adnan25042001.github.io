@@ -45,10 +45,10 @@ const Contact = () => {
 
     return (
         <section
-            className="contact-bg bg-no-repeat bg-cover bg-center bg-mainColor bg-opacity-40 py-10"
+            className="contact-bg bg-no-repeat bg-cover bg-center bg-mainColor bg-opacity-40 py-20"
             id="contact"
         >
-            <div className="container bg-white mx-auto text-black rounded-md shadow-bs px-6 py-4 xs:px-10 xs:py-8">
+            <div className="container bg-gray-100 mx-auto text-black rounded-md shadow-bs px-6 py-4 xs:px-10 xs:py-8">
                 <div className="heading text-mainColor mb-8">
                     <h3>Contact</h3>
                 </div>

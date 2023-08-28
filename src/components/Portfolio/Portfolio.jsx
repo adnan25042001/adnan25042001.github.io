@@ -4,7 +4,8 @@ import { portfolioList } from "../../assets/data";
 
 const Portfolio = () => {
     return (
-        <section className="wave" id="portfolio">
+        <section className="relative" id="portfolio">
+            <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-br from-[#9633e6] to-[#df1d48] rounded-3xl filter blur-3xl opacity-60 -z-10"></div>
             <div className="heading mb-14">
                 <h3>Portfolio</h3>
                 <h2>My Amazing Work</h2>

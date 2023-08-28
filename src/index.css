@@ -13,7 +13,7 @@
         font-family: "Ubuntu", sans-serif;
     }
     section {
-        @apply py-[80px] transition-all duration-300 px-3;
+        @apply py-[80px] md:py-[120px] transition-all duration-300 px-3;
     }
     a {
         @apply no-underline cursor-pointer;
@@ -122,8 +122,8 @@
         @apply right-0;
     }
 
-    .wave {
-        @apply bg-gradient;
+    /* .wave {
+        @apply bg-white;
 
         --mask: radial-gradient(44.72px at 50% 60px, #000 99%, #0000 101%)
                 calc(50% - 40px) 0/80px 51% repeat-x,
@@ -143,7 +143,7 @@
                 50% calc(100% - 20px) / 80px calc(51% - 20px) repeat-x;
         -webkit-mask: var(--mask);
         mask: var(--mask);
-    }
+    } */
 
     .cta-box {
         @apply rounded-xl p-[50px] cursor-pointer relative overflow-hidden transition-all duration-300;
@@ -151,11 +151,11 @@
 
     .cta-box::after {
         content: "";
-        @apply absolute h-full w-full top-0 left-[100%] bg-gradient-to-r from-blue-500 to-yellow-500 -z-10 transition-all duration-300;
+        @apply absolute h-full w-full top-0 left-[150%] bg-gray-200 transition-all duration-300 -z-10;
     }
 
     .cta-box:hover {
-        @apply shadow-xl after:left-0;
+        @apply text-gray-900 after:left-0;
     }
 
     .heading {

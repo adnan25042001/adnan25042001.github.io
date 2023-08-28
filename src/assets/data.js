@@ -90,9 +90,7 @@ export const skillList = [
     { name: "react", img: react },
     { name: "node js", img: node },
     { name: "next js", img: next },
-    { name: "vite js", img: vite },
     { name: "tailwind", img: tailwind },
-    { name: "bootstrap", img: bootstrap },
     { name: "spring", img: spring },
     { name: "springboot", img: springboot },
     { name: "maven", img: maven },
@@ -101,5 +99,4 @@ export const skillList = [
     { name: "mongodb", img: mongodb },
     { name: "github", img: github },
     { name: "postman", img: postman },
-    { name: "netlify", img: netlify },
 ];

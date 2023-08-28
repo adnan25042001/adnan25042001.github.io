@@ -4,15 +4,13 @@ import { motion } from "framer-motion";
 const Cta = () => {
     const container = {
         hidden: {
-            opacity: 0,
-            scale: 0,
+            opacity: 1,
         },
         visible: {
             opacity: 1,
-            scale: 1,
             transition: {
                 delayChildren: 0.2,
-                staggerChildren: 0.3,
+                staggerChildren: 0.1,
             },
         },
     };
@@ -22,12 +20,18 @@ const Cta = () => {
     };
     return (
         <motion.section
-            className="wave w-full"
+            className="relative w-full"
             variants={container}
             initial="hidden"
             whileInView="visible"
             id="cta"
         >
+            <motion.div
+                initial={{skewY: 6}}
+                whileInView={{skewY: -6}}
+                transition={{duration: 0.5}}
+                className="absolute inset-0 w-full h-full bg-gradient -z-20"
+            ></motion.div>
             <div className="container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-center justify-center text-center">
                 <motion.div className="cta-box" variants={item}>
                     <h3 className="font-bold text-2xl mb-3">1200+</h3>

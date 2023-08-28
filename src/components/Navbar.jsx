@@ -45,7 +45,7 @@ const Navbar = () => {
                                         spy={true}
                                         smooth={true}
                                         duration={500}
-                                        offset={ele === "Home" ? -100 : -40}
+                                        offset={ele === "Home" ? -100 : -10}
                                         key={ele}
                                         className="relative overflow-hidden py-1 px-4 lg:px-6 link-hover"
                                         onClick={(e) => {
