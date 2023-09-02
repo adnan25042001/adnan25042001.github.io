@@ -49,7 +49,7 @@
     }
 
     .social .social-link {
-        @apply w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer transition-all duration-500 shrink-0  overflow-hidden relative;
+        @apply w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer transition-all duration-500 shrink-0 overflow-hidden relative;
     }
 
     .social .social-link svg {
@@ -57,12 +57,12 @@
     }
 
     .social .social-link:hover svg {
-        @apply text-white;
+        @apply text-black;
     }
 
     .social .social-link::after {
         content: "";
-        @apply h-full w-full top-[-110%] left-0 bg-icon absolute transition-all duration-500 z-[-1];
+        @apply h-full w-full top-[-110%] left-0 absolute transition-all duration-500 z-[-1];
     }
 
     .social .social-link:hover::after {
@@ -71,6 +71,10 @@
 
     .social .social-link:hover {
         @apply scale-[1.15];
+    }
+
+    .social .c-link:hover svg{
+        @apply text-white
     }
 
     .social div {

@@ -39,21 +39,21 @@ const Home = () => {
                         <a
                             href="https://www.linkedin.com/in/adnanhussain0425/"
                             target="_blank"
-                            className="social-link bg-white text-bgColor"
+                            className="social-link bg-icon text-white"
                         >
                             <SiLinkedin />
                         </a>
                         <a
                             href="https://github.com/adnan25042001"
                             target="_blank"
-                            className="social-link bg-white text-bgColor"
+                            className="social-link bg-icon text-white"
                         >
                             <SiGithub />
                         </a>
                         <a
                             href="mailto:adnan.hussain.136660@gmail.com"
                             target="_blank"
-                            className="social-link bg-white text-bgColor"
+                            className="social-link bg-icon text-white"
                         >
                             <SiGmail />
                         </a>
