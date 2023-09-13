@@ -13,6 +13,10 @@ import wm2 from "../assets/images/portfolio/wonder-mania/wm-2.png";
 import wm3 from "../assets/images/portfolio/wonder-mania/wm-3.png";
 import wm4 from "../assets/images/portfolio/wonder-mania/wm-4.png";
 
+import cg1 from "../assets/images/portfolio/chatter-g/cg-1.png";
+import cg2 from "../assets/images/portfolio/chatter-g/cg-2.png";
+import cg3 from "../assets/images/portfolio/chatter-g/cg-3.png";
+
 import pf1 from "../assets/images/portfolio/myPortfolio/pf-1.png";
 import pf2 from "../assets/images/portfolio/myPortfolio/pf-2.png";
 import pf3 from "../assets/images/portfolio/myPortfolio/pf-3.png";
@@ -24,9 +28,7 @@ import java from "./images/skills/java.svg";
 import react from "./images/skills/react.svg";
 import node from "./images/skills/node.svg";
 import next from "./images/skills/nextjs.svg";
-import vite from "./images/skills/vite.svg";
 import tailwind from "./images/skills/tailwind.png";
-import bootstrap from "./images/skills/bootstrap.svg";
 import spring from "./images/skills/spring.svg";
 import springboot from "./images/skills/springboot.png";
 import maven from "./images/skills/maven.png";
@@ -35,7 +37,6 @@ import mysql from "./images/skills/mysql.svg";
 import mongodb from "./images/skills/mongodb.svg";
 import github from "./images/skills/github.svg";
 import postman from "./images/skills/postman.svg";
-import netlify from "./images/skills/netlify.svg";
 
 export const menuItem = ["Home", "About", "Portfolio", "Skills", "Contact"];
 
@@ -46,7 +47,7 @@ export const portfolioList = [
         imgList: [s1, s2, s3],
         name: "SKILLEX",
         desc: "Skillex is a cutting-edge e-learning platform! Embark on a journey of knowledge and skill enhancement from the comfort of your own space.",
-        tech: "React, Tailwind CSS, NodeJs",
+        tech: "React, Tailwind CSS, Node js",
         live: "https://skillex.onrender.com/",
         code: "https://github.com/adnan25042001/legendary-succotash",
     },
@@ -56,7 +57,7 @@ export const portfolioList = [
         imgList: [bs1, bs2, bs3, bs4, bs5],
         name: "BIGSTORE.",
         desc: "BIGSTORE is a e-commerse website that is expertly curated by the best luxury fashion brands and boutiques.",
-        tech: "React, CSS, Strapi, Stripe, NodeJs",
+        tech: "React, CSS, Strapi, Stripe, Node js",
         live: "https://bigstore-auxi.onrender.com/",
         code: "https://github.com/adnan25042001/bigstore",
     },
@@ -66,12 +67,22 @@ export const portfolioList = [
         imgList: [wm1, wm2, wm3, wm4],
         name: "Wonder-Mania",
         desc: "Discover your dream destinations with ease. Our tour and travel website offers seamless planning, expert guides, and unforgettable experiences.",
-        tech: "React, Tailwind CSS, NodeJs",
+        tech: "React, Tailwind CSS, Node js",
         live: "https://wonder-mania.onrender.com/",
         code: "https://github.com/adnan25042001/wonder-mania",
     },
     {
         id: 4,
+        cls: "cg",
+        imgList: [cg1, cg2, cg3],
+        name: "Chatter-G",
+        desc: "Connect and chat with anyone, anywhere, without having to worry about your messages being read by anyone else using Chatter-G.",
+        tech: "Next js, Tailwind CSS, Node js, firebase",
+        live: "https://chatter-g.vercel.app/",
+        code: "https://github.com/adnan25042001/chatter-G",
+    },
+    {
+        id: 5,
         cls: "pf",
         imgList: [pf1, pf2, pf3],
         name: "Portfolio",
