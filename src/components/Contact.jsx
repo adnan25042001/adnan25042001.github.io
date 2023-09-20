@@ -118,18 +118,24 @@ const Contact = () => {
                             <input
                                 id="name"
                                 type="text"
+                                name="name"
+                                autoComplete="on"
                                 placeholder="Enter your name"
                                 className="bg-slate-200 w-full px-5 py-2 rounded-md text-lg"
                             />
                             <input
                                 id="email"
                                 type="email"
+                                name="email"
+                                autoComplete="on"
                                 placeholder="Enter your email"
                                 className="bg-slate-200 w-full px-5 py-2 rounded-md text-lg"
                             />
                             <textarea
                                 id="message"
                                 type="text"
+                                name="message"
+                                autoComplete="off"
                                 placeholder="Enter your message"
                                 rows="4"
                                 className="bg-slate-200 w-full px-5 py-2 rounded-md text-lg resize-none"
@@ -137,6 +143,7 @@ const Contact = () => {
                             <input
                                 id="tbtn"
                                 type="submit"
+                                name="button"
                                 value="Send Now"
                                 className="text-white text-lg transition-all duration-300 font-semibold border-[2px] border-mainColor cursor-pointer rounded-lg bg-mainColor py-[6px] px-4 lg:py-2 lg:px-5 hover:bg-transparent hover:text-mainColor"
                             />

@@ -63,6 +63,10 @@ const App = () => {
         let cursor = document.querySelector(".cursor");
         let timeout;
 
+        const mouseStopped = () => {
+            cursor.style.display = "none";
+        };
+
         document.addEventListener("mousemove", (e) => {
             cursor.style.left = e.clientX + "px";
             cursor.style.top = e.clientY + "px";
@@ -70,16 +74,14 @@ const App = () => {
 
             clearTimeout(timeout);
 
-            timeout = setTimeout(mouseStopped, 1000);
+            timeout = setTimeout(mouseStopped, 2000);
         });
 
         document.addEventListener("mouseout", () => {
             cursor.style.display = "none";
         });
 
-        const mouseStopped = () => {
-            cursor.style.display = "none";
-        };
+        
     }, []);
     return (
         <>
