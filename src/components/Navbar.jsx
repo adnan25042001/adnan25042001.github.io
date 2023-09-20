@@ -3,6 +3,7 @@ import { MdClose, MdMenu } from "react-icons/md";
 import { Link } from "react-scroll";
 import { Context } from "../assets/context/MyContext";
 import { menuItem } from "../assets/data";
+import pdf from "../assets/download/Adnan_Hussain_Resume.pdf";
 
 const Navbar = () => {
     const { scrolled, toggle, setToggle, click } = useContext(Context);
@@ -61,9 +62,13 @@ const Navbar = () => {
                                 );
                             })}
                     </div>
-                    <button className="text-mainColor transition-all duration-300 font-semibold border-[2px] border-white cursor-pointer rounded-lg bg-white py-[4px] px-[10px] lg:py-[6px] lg:px-3 hover:bg-transparent hover:text-white">
+                    <a
+                        href={pdf}
+                        download
+                        className="text-mainColor transition-all duration-300 font-semibold border-[2px] border-white cursor-pointer rounded-lg bg-white py-[4px] px-[10px] lg:py-[6px] lg:px-3 hover:bg-transparent hover:text-white"
+                    >
                         Download CV
-                    </button>
+                    </a>
                 </nav>
 
                 {!toggle && (
