@@ -15,11 +15,6 @@ const App = () => {
 
     useEffect(() => {
         let home = document.getElementById("home").clientHeight;
-        let about = document.getElementById("about").clientHeight;
-        let portfolio = document.getElementById("portfolio").clientHeight;
-        let skills = document.getElementById("skills").clientHeight;
-        let cta = document.getElementById("cta").clientHeight;
-        let github = document.getElementById("github").clientHeight;
 
         const scrollFunc = () => {
             let scroll = window.scrollY;
@@ -28,32 +23,6 @@ const App = () => {
                 setScrolled(true);
             } else {
                 setScrolled(false);
-            }
-
-            if (scroll <= home) {
-                const homeLink = document.getElementById("Home");
-                click(homeLink);
-            } else if (scroll > home && scroll <= home + about) {
-                const aboutLink = document.getElementById("About");
-                click(aboutLink);
-            } else if (
-                scroll > home + about &&
-                scroll <= home + about + portfolio
-            ) {
-                const portfolioLink = document.getElementById("Portfolio");
-                click(portfolioLink);
-            } else if (
-                scroll > home + about + portfolio &&
-                scroll <= home + about + portfolio + skills + cta + github
-            ) {
-                const skillLink = document.getElementById("Skills");
-                click(skillLink);
-            } else if (
-                scroll >
-                home + about + portfolio + skills + cta + github
-            ) {
-                const contactLink = document.getElementById("Contact");
-                click(contactLink);
             }
         };
         return window.addEventListener("scroll", scrollFunc);
@@ -80,8 +49,6 @@ const App = () => {
         document.addEventListener("mouseout", () => {
             cursor.style.display = "none";
         });
-
-        
     }, []);
     return (
         <>

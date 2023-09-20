@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 import { Link } from "react-scroll";
 import { Context } from "../assets/context/MyContext";
@@ -6,7 +6,7 @@ import { menuItem } from "../assets/data";
 import pdf from "../assets/download/Adnan_Hussain_Resume.pdf";
 
 const Navbar = () => {
-    const { scrolled, toggle, setToggle, click } = useContext(Context);
+    const { scrolled, toggle, setToggle } = useContext(Context);
 
     return (
         <header
@@ -25,7 +25,6 @@ const Navbar = () => {
                     offset={-100}
                     onClick={() => {
                         setToggle(false);
-                        click();
                     }}
                     className="text-xl xs:text-2xl font-bold static z-[100]"
                 >
@@ -51,12 +50,11 @@ const Navbar = () => {
                                         className="relative overflow-hidden py-1 px-4 lg:px-6 link-hover"
                                         onClick={(e) => {
                                             setToggle(false);
-                                            click(e.target);
                                         }}
                                     >
                                         {ele}{" "}
                                         <span
-                                            className={`absolute h-full w-full bg-white left-[100%] top-[92%] transition-all duration-500`}
+                                            className={`absolute h-[3px] w-full scale-x-0 bg-white left-0 bottom-0 transition-all duration-500`}
                                         ></span>
                                     </Link>
                                 );
@@ -73,7 +71,7 @@ const Navbar = () => {
 
                 {!toggle && (
                     <MdMenu
-                        className=" cursor-pointer Static md:hidden text-white font-bold text-3xl z-[100]"
+                        className="cursor-pointer Static md:hidden text-white font-bold text-3xl z-[100]"
                         onClick={() => setToggle(true)}
                     />
                 )}

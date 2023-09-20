@@ -41,7 +41,7 @@
     }
 
     .link-hover:hover span {
-        @apply left-0;
+        @apply scale-x-100;
     }
 
     .social {
