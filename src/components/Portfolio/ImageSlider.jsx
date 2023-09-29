@@ -56,6 +56,7 @@ const ImageSlider = ({ imgList, cls }) => {
             {imgList &&
                 imgList.map((img) => (
                     <img
+                        loading="lazy"
                         key={img}
                         src={img}
                         alt=""

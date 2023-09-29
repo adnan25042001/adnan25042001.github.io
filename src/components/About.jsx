@@ -16,7 +16,7 @@ const About = () => {
                     transition={{ duration: 0.5 }}
                     className="flex justify-center items-center"
                 >
-                    <img src={aboutImg} alt="" />
+                    <img loading="lazy" src={aboutImg} alt="" />
                 </motion.div>
                 <motion.div
                     initial={{ y: 250, opacity: 0 }}

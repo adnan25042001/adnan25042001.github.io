@@ -8,7 +8,12 @@ const Skill = ({ skill }) => {
     };
     return (
         <motion.div className="skill" variants={item}>
-            <img src={skill.img} alt={skill.name} className="w-[45%] mb-3" />
+            <img
+                loading="lazy"
+                src={skill.img}
+                alt={skill.name}
+                className="w-[45%] mb-3"
+            />
             <p className="text-sm uppercase">{skill.name}</p>
             <div className="after absolute w-full h-full right-[100%] transition-all duration-300 bg-icon -z-10"></div>
         </motion.div>
