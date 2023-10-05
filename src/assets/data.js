@@ -1,3 +1,7 @@
+import bb1 from "../assets/images/portfolio/blink-blog/bb-1.png";
+import bb2 from "../assets/images/portfolio/blink-blog/bb-2.png";
+import bb3 from "../assets/images/portfolio/blink-blog/bb-3.png";
+
 import s1 from "../assets/images/portfolio/skillex/s-1.png";
 import s2 from "../assets/images/portfolio/skillex/s-2.png";
 import s3 from "../assets/images/portfolio/skillex/s-3.png";
@@ -43,6 +47,16 @@ export const menuItem = ["Home", "About", "Portfolio", "Skills", "Contact"];
 export const portfolioList = [
     {
         id: 1,
+        cls: "bb",
+        imgList: [bb1, bb2, bb3],
+        name: "Blink Blog",
+        desc: "Blink Blog: Your daily dose of insightful and concise articles covering a wide range of topics, keeping you informed and engaged.",
+        tech: "React, Next js, Tailwind CSS, TypeScript, Sanity",
+        live: "https://blink-blog.vercel.app/",
+        code: "https://github.com/adnan25042001/blink-blog",
+    },
+    {
+        id: 2,
         cls: "s",
         imgList: [s1, s2, s3],
         name: "SKILLEX",
