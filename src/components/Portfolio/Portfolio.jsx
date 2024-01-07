@@ -3,6 +3,7 @@ import PortfolioItem from "./PortfolioItem";
 import { portfolioList } from "../../assets/data";
 
 const Portfolio = () => {
+    console.log(portfolioList)
     return (
         <section className="relative" id="portfolio">
             <div className="absolute w-full h-full top-0 left-0 bg-gradient-to-br from-[#9633e6] to-[#df1d48] rounded-3xl filter blur-3xl opacity-60 -z-10"></div>

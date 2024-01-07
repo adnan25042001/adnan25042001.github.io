@@ -21,8 +21,8 @@ const PortfolioItem = ({ imgList, name, desc, tech, live, code, cls }) => {
                     </p>
                     <p className="text-mainColor font-semibold mb-3">
                         Tech Stacks :-{" "}
-                        <span className="text-base xs:text-lg text-gray-800 font-normal">
-                            {tech}
+                        <span className="text-base xs:text-lg text-gray-800 font-medium">
+                            {tech.join(", ")}
                         </span>
                     </p>
                 </div>
