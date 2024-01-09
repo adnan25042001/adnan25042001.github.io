@@ -8,10 +8,10 @@ const PortfolioItem = ({ imgList, name, desc, tech, live, code, cls }) => {
             initial={{ y: 150, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="rounded-lg shadow-md hover:shadow-xl bg-white text-black overflow-hidden"
+            className="rounded-lg shadow-md hover:shadow-xl bg-white text-black overflow-hidden flex flex-col"
         >
             <ImageSlider imgList={imgList} cls={cls} />
-            <div className="p-6 flex flex-col justify-between">
+            <div className="p-6 flex flex-col justify-between flex-grow">
                 <div>
                     <h2 className="text-xl xs:text-2xl font-bold text-mainColor mb-3">
                         {name}

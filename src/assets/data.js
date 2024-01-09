@@ -25,6 +25,10 @@ import pf1 from "../assets/images/portfolio/myPortfolio/pf-1.png";
 import pf2 from "../assets/images/portfolio/myPortfolio/pf-2.png";
 import pf3 from "../assets/images/portfolio/myPortfolio/pf-3.png";
 
+import tl1 from "../assets/images/portfolio/trello/tl-1.png";
+import tl2 from "../assets/images/portfolio/trello/tl-2.png";
+import tl3 from "../assets/images/portfolio/trello/tl-3.png";
+
 import html from "./images/skills/html.svg";
 import css from "./images/skills/css.svg";
 import js from "./images/skills/js.svg";
@@ -104,6 +108,16 @@ export const portfolioList = [
         tech: ["HTML", "CSS", "JavaScript"],
         live: "https://adnan-portfolio.onrender.com/",
         code: "https://github.com/adnan25042001/portfolio",
+    },
+    {
+        id: 6,
+        cls: "tl",
+        imgList: [tl1, tl2, tl3],
+        name: "Trello Clone",
+        desc: "A Trello-inspired application designed to streamline your personal and professional life.",
+        tech: ["Next Js", "TypeScript", "Tailwind CSS", "Appwrite"],
+        live: "https://trello-adnan25042001.vercel.app/",
+        code: "https://github.com/adnan25042001/trello",
     },
 ];
 
