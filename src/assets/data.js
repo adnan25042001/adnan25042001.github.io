@@ -67,7 +67,7 @@ export const portfolioList = [
         desc: "Skillex is a cutting-edge e-learning platform! Embark on a journey of knowledge and skill enhancement from the comfort of your own space.",
         tech: ["React", "Tailwind CSS", "Framer Motion"],
         live: "https://skillex.onrender.com/",
-        code: "https://github.com/adnan25042001/legendary-succotash",
+        code: "https://github.com/adnan25042001/skillex",
     },
     // {
     //     id: 2,
