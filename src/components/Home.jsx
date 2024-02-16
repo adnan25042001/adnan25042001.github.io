@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Home = () => {
     return (
         <section
-            className={`bg-[url(./assets/images/star-background.jpg)] bg-no-repeat bg-cover bg-center bg-fixed relative pt-[100px] home h-full min-h-full sm:min-h-full sm:h-[100vh]`}
+            className={`bg-[url(./assets/images/star-background.jpg)] bg-no-repeat bg-cover bg-center bg-fixed relative pt-[100px] home h-full min-h-[100svh] sm:min-h-full sm:h-[100svh]`}
         >
             <div
                 className="container m-auto flex flex-col-reverse sm:flex-row justify-between items-center relative h-full"
