@@ -5,128 +5,128 @@
 @tailwind utilities;
 
 @layer base {
-    * {
-        @apply m-0 p-0 box-border;
-    }
-    body {
-        @apply bg-bgColor text-PrimaryColor;
-        font-family: "Ubuntu", sans-serif;
-    }
-    section {
-        @apply py-[80px] md:py-[120px] transition-all duration-300 px-3;
-    }
-    a {
-        @apply no-underline cursor-pointer;
-    }
-    ::-webkit-scrollbar {
-        @apply w-[10px];
-    }
+  * {
+    @apply m-0 p-0 box-border;
+  }
+  body {
+    @apply bg-bgColor text-PrimaryColor;
+    font-family: "Ubuntu", sans-serif;
+  }
+  section {
+    @apply py-[80px] md:py-[120px] transition-all duration-300 px-3;
+  }
+  a {
+    @apply no-underline cursor-pointer;
+  }
+  ::-webkit-scrollbar {
+    @apply w-[10px];
+  }
 
-    ::-webkit-scrollbar-track {
-        @apply bg-white;
-    }
+  ::-webkit-scrollbar-track {
+    @apply bg-white;
+  }
 
-    ::-webkit-scrollbar-thumb {
-        @apply bg-secondryColor;
-    }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-secondryColor;
+  }
 
-    ::-webkit-scrollbar-thumb:hover {
-        @apply bg-mainColor;
-    }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-mainColor;
+  }
 }
 
 @layer components {
-    .link-hover span.active {
-        @apply left-0;
-    }
+  .link-hover span.active {
+    @apply left-0;
+  }
 
-    .link-hover:hover span {
-        @apply scale-x-100;
-    }
+  .link-hover:hover span {
+    @apply scale-x-100;
+  }
 
-    .social {
-        @apply flex items-center flex-wrap;
-    }
+  .social {
+    @apply flex items-center flex-wrap;
+  }
 
-    .social .social-link {
-        @apply w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer transition-all duration-500 shrink-0 overflow-hidden relative;
-    }
+  .social .social-link {
+    @apply w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer transition-all duration-500 shrink-0 overflow-hidden relative;
+  }
 
-    .social .social-link svg {
-        @apply relative transition-all duration-500;
-    }
+  .social .social-link svg {
+    @apply relative transition-all duration-500;
+  }
 
-    .social .social-link:hover svg {
-        @apply text-black;
-    }
+  .social .social-link:hover svg {
+    @apply text-black;
+  }
 
-    .social .social-link::after {
-        content: "";
-        @apply h-full w-full top-[-110%] left-0 absolute transition-all duration-500 z-[-1];
-    }
+  .social .social-link::after {
+    content: "";
+    @apply h-full w-full top-[-110%] left-0 absolute transition-all duration-500 z-[-1];
+  }
 
-    .social .social-link:hover::after {
-        @apply top-0;
-    }
+  .social .social-link:hover::after {
+    @apply top-0;
+  }
 
-    .social .social-link:hover {
-        @apply scale-[1.15];
-    }
+  .social .social-link:hover {
+    @apply scale-[1.15];
+  }
 
-    .social .c-link:hover svg{
-        @apply text-white
-    }
+  .social .c-link:hover svg {
+    @apply text-white;
+  }
 
-    .social div {
-        @apply text-black font-medium text-xl px-3 h-10 rounded-lg flex items-center justify-center transition-all duration-500 relative bg-white overflow-hidden;
-    }
+  .social div {
+    @apply text-black font-medium text-xl px-3 h-10 rounded-lg flex items-center justify-center transition-all duration-500 relative bg-white overflow-hidden;
+  }
 
-    .social div .btn {
-        @apply z-[1];
-    }
+  .social div .btn {
+    @apply z-[1];
+  }
 
-    .social div::after {
-        content: "";
-        @apply h-full w-full top-0 right-[-110%] bg-icon absolute transition-all duration-500 z-0;
-    }
+  .social div::after {
+    content: "";
+    @apply h-full w-full top-0 right-[-110%] bg-icon absolute transition-all duration-500 z-0;
+  }
 
-    .social div:hover {
-        @apply text-white;
-    }
+  .social div:hover {
+    @apply text-white;
+  }
 
-    .social div:hover::after {
-        @apply right-0;
-    }
+  .social div:hover::after {
+    @apply right-0;
+  }
 
-    .image-transition {
-        @apply relative overflow-hidden rounded-3xl;
-    }
+  .image-transition {
+    @apply relative overflow-hidden rounded-3xl;
+  }
 
-    .image-transition img {
-        @apply transition-all duration-500 transform;
-    }
+  .image-transition img {
+    @apply transition-all duration-500 transform;
+  }
 
-    .image-transition:hover img {
-        @apply scale-[1.2];
-    }
+  .image-transition:hover img {
+    @apply scale-[1.2];
+  }
 
-    .arrow:hover svg {
-        opacity: 0.8;
-    }
+  .arrow:hover svg {
+    opacity: 0.8;
+  }
 
-    .skill {
-        @apply flex flex-col h-36 w-36 items-center justify-center rounded-full overflow-hidden relative shrink-0;
-    }
+  .skill {
+    @apply flex flex-col h-36 w-36 items-center justify-center rounded-full overflow-hidden relative shrink-0;
+  }
 
-    .skill:hover {
-        @apply shadow-md shadow-white;
-    }
+  .skill:hover {
+    @apply shadow-md shadow-white;
+  }
 
-    .skill:hover .after {
-        @apply right-0;
-    }
+  .skill:hover .after {
+    @apply right-0;
+  }
 
-    /* .wave {
+  /* .wave {
         @apply bg-white;
 
         --mask: radial-gradient(44.72px at 50% 60px, #000 99%, #0000 101%)
@@ -149,73 +149,73 @@
         mask: var(--mask);
     } */
 
-    .cta-box {
-        @apply rounded-xl p-[50px] cursor-pointer relative overflow-hidden transition-all duration-300;
-    }
+  .cta-box {
+    @apply rounded-xl p-[50px] cursor-pointer relative overflow-hidden transition-all duration-300;
+  }
 
-    .cta-box::after {
-        content: "";
-        @apply absolute h-full w-full top-0 left-[150%] bg-gray-200 transition-all duration-300 -z-10;
-    }
+  .cta-box::after {
+    content: "";
+    @apply absolute h-full w-full top-0 left-[150%] bg-gray-200 transition-all duration-300 -z-10;
+  }
 
-    .cta-box:hover {
-        @apply text-gray-900 after:left-0;
-    }
+  .cta-box:hover {
+    @apply text-gray-900 after:left-0;
+  }
 
-    .heading {
-        @apply text-center;
-    }
+  .heading {
+    @apply text-center;
+  }
 
-    .heading h3 {
-        @apply font-textStyle text-2xl sm:text-3xl md:text-4xl;
-    }
+  .heading h3 {
+    @apply font-textStyle text-2xl sm:text-3xl md:text-4xl;
+  }
 
-    .heading h2 {
-        @apply text-2xl sm:text-3xl md:text-4xl font-semibold mt-2 mb-5 text-secondryColor;
-    }
+  .heading h2 {
+    @apply text-2xl sm:text-3xl md:text-4xl font-semibold mt-2 mb-5 text-secondryColor;
+  }
 
-    .contact-bg {
-        background-image: url("./assets/images/footer-bg.png");
-    }
+  .contact-bg {
+    background-image: url("./assets/images/footer-bg.png");
+  }
 
-    .contact-after::after {
-        content: "";
-        @apply h-full w-[2px] hidden sm:block bg-bgColor top-[50%] right-0 absolute translate-y-[-50%];
-    }
+  .contact-after::after {
+    content: "";
+    @apply h-full w-[2px] hidden sm:block bg-bgColor top-[50%] right-0 absolute translate-y-[-50%];
+  }
 
-    .cursor {
-        z-index: 999;
-        position: fixed;
-        width: 12px;
-        height: 12px;
-        background-color: #8d2de2;
-        border-radius: 50%;
-        pointer-events: none;
-        left: 0;
-        top: 0;
-        transform: translate(-50%, -50%);
-        animation: colors 5s infinite;
-        transition: 0.1s;
-        display: none;
-    }
+  .cursor {
+    z-index: 999;
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background-color: #8d2de2;
+    border-radius: 50%;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    animation: colors 5s infinite;
+    transition: 0.1s;
+    display: none;
+  }
 
-    .cursor::before {
-        content: "";
-        position: absolute;
-        background-color: #8d2de2;
-        width: 36px;
-        height: 36px;
-        opacity: 0.2;
-        transform: translate(-33%, -33%);
-        border-radius: 50%;
-    }
+  .cursor::before {
+    content: "";
+    position: absolute;
+    background-color: #8d2de2;
+    width: 36px;
+    height: 36px;
+    opacity: 0.2;
+    transform: translate(-33%, -33%);
+    border-radius: 50%;
+  }
 
-    @keyframes colors {
-        0% {
-            filter: hue-rotate(0deg);
-        }
-        100% {
-            filter: hue-rotate(360deg);
-        }
+  @keyframes colors {
+    0% {
+      filter: hue-rotate(0deg);
     }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
 }
